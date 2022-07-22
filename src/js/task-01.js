@@ -5,7 +5,7 @@ const liEl = document.querySelectorAll('h2');
 console.log("Category: ",liEl[0].textContent);
 
 const animalsEl = document.querySelectorAll('ul');
-console.log("Elements: ",animalsEl.length);
+console.log("Elements: ",animalsEl[1].textContent);
 
 const prodEl = document.querySelectorAll('h2');
 console.log("Category: ",prodEl[1].textContent);
@@ -18,3 +18,6 @@ console.log("Category: ",tehEl[2].textContent);
 
 const tehUlEl = document.querySelectorAll('ul');
 console.log("Elements: ",prodUlEl[3].textContent);
+
+
+
