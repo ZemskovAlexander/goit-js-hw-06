@@ -17,7 +17,6 @@ const option = images[0];
 
 const imagesEl = document.querySelector("ul");
 
-
 const elements = images.map((option) => {
   const imgEl = document.createElement("img");
 
