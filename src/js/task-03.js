@@ -31,3 +31,4 @@ const elements = images.map((option) => {
 imagesEl.append(...elements);
 
 // imagesEl.insertAdjacentHTML("afterbegin", elements);
+// `<li ><img width="270" src="${images.url}" alt="${images.alt}" /></li>`
