@@ -18,16 +18,26 @@ const option = images[0];
 const imagesEl = document.querySelector("ul");
 
 const elements = images.map((option) => {
-  const imgEl = document.createElement("img");
+`<li ><img width="270" src="${images.url}" alt="${images.alt}" /></li>`;   // Туплю, никак не могу интегрировать что бы работало :(
 
-  imgEl.alt = option.alt;
-  imgEl.src = option.url;
-  imgEl.width = 640;
-
-  return imgEl;
 });
+imagesEl.insertAdjacentHTML("afterbegin", elements);
 
-imagesEl.append(...elements);
 
-// imagesEl.insertAdjacentHTML("afterbegin", elements);
-// `<li ><img width="270" src="${images.url}" alt="${images.alt}" /></li>`
+
+
+
+
+// const element = images.map((option) => {
+//   const imgEl = document.createElement("img");
+
+//   imgEl.alt = option.alt;
+//   imgEl.src = option.url;
+//   imgEl.width = 640;
+
+//   return imgEl;
+// });
+
+
+
+// imagesEl.append(...elements);
