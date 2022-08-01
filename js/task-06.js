@@ -10,7 +10,7 @@ refs.input.addEventListener("blur", onInputBlur);
 
 function onInputBlur(event) {
   console.log(event.currentTarget.value);
-  if (event.target.elements === refs.input.getAttribute("data-length").length); {
+  if (event.target.elements === refs.input.getAttribute("data-length")); {
     console.log("submit...", event.target.elements);
 
     return console.log('Вписали 6 символов');
