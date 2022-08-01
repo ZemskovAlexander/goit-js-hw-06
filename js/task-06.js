@@ -14,7 +14,7 @@ function onInputBlur(event) {
     return console.log(refs.input.classList.add("#validation-input.valid"));
   }
 }
-refs.input.getAttribute("data-length");
+
 
 
 
