@@ -10,9 +10,12 @@ refs.input.addEventListener("blur", onInputBlur);
 
 function onInputBlur(event) {
   console.log(event.currentTarget.value);
-  if (event.currentTarget.value.length === refs.input.getAttribute("data-length")); {
-    return console.log(refs.input.classList.add("#validation-input.valid"));
+  if (event.target.elements === refs.input.getAttribute("data-length").length); {
+    console.log("submit...", event.target.elements);
+
+    return console.log('Вписали 6 символов');
   }
+  
 }
 
 
