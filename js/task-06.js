@@ -1,5 +1,5 @@
 const refs = {
-  input: document.querySelector("#validation-input"),
+  input: document.querySelector("input"),
   nameLabel: document.querySelector("#name-output"),
   placeHolder: document.querySelector("placeholder"),
   validationInputInvalid: document.querySelector("#validation-input.invalid"),
@@ -7,10 +7,24 @@ const refs = {
 };
 
 refs.input.addEventListener("blur", onInputBlur);
+
+function onInputBlur(event) {
+  console.log(event.currentTarget.value);
+  if (event.currentTarget.value.length === refs.input.getAttribute("data-length")); {
+    return console.log(refs.input.classList.add("#validation-input.valid"));
+  }
+}
+refs.input.getAttribute("data-length");
+
+
+
+
+
+
 // refs.input.addEventListener("submit", onFormSubmit);
 // refs.input.addEventListener("input", onInputChange);
 
-refs.input.classList.add("text");
+// refs.input.classList.add("text", inputText);
 
 // function onFormSubmit(event) {
 //   event.preventDefault();
@@ -21,11 +35,4 @@ refs.input.classList.add("text");
 //     return console.log("Please fill in all the fields!");
 //   }
 // }
-console.log(dataLengthCheck.textContent);
-
-function onInputBlur(event) {
-  console.log(event.currentTarget.value);
-  if (event.currentTarget.value === dataLengthCheck) {
-    return console.log("Please fill in all the fields!");
-  }
-}
+// console.log(refs.input.getAttribute("data-length"));
