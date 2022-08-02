@@ -11,7 +11,8 @@ refs.input.addEventListener("blur", onInputBlur);
 function onInputBlur(event) {
   console.log(event.currentTarget.value);
   if (
-    event.currentTarget.value.length === Number(refs.input.getAttribute("data-length"))
+    event.currentTarget.value.length ===
+    Number(refs.input.getAttribute("data-length"))
   ) {
     return (
       refs.validationInputInvalid.classList.add("valid"),
@@ -19,15 +20,11 @@ function onInputBlur(event) {
     );
   }
 
-  return refs.validationInputInvalid.classList.add("invalid"),
-    refs.validationInputInvalid.classList.remove("valid");
+  return (
+    refs.validationInputInvalid.classList.add("invalid"),
+    refs.validationInputInvalid.classList.remove("valid")
+  );
 }
-
-
-
-
-
-
 
 // refs.input.addEventListener("submit", onFormSubmit);
 // refs.input.addEventListener("input", onInputChange);
