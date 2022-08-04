@@ -3,10 +3,14 @@ function getRandomHexColor() {
 }
 
 const singleBtn = document.querySelector("body");
+const text = document.querySelector("span");
 
 const handleClick = () => {
-  console.log("click event listener callback");
-  return (singleBtn.style.backgroundColor = getRandomHexColor());
+  const randomColor = getRandomHexColor();
+  return (
+    (singleBtn.style.backgroundColor = randomColor),
+    (text.textContent = randomColor)
+  );
 };
 
 singleBtn.addEventListener("click", handleClick);
